@@ -2508,8 +2508,10 @@ fun ChartDetailDialog(
                                 Text(
                                     text = if (valItem >= 1000f) {
                                         String.format("%.1fk", valItem / 1000f)
+                                    } else if (unit == "steps" || unit == "kcal") {
+                                        String.format("%.0f", valItem)
                                     } else {
-                                        String.format("%.0f", valItem).replace(".0", "")
+                                        String.format("%.1f", valItem)
                                     },
                                     style = MaterialTheme.typography.labelSmall,
                                     fontSize = 8.sp,
