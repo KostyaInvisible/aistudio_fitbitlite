@@ -1,0 +1,6 @@
+{
+  "name": "Fitbit Lite",
+  "description": "A simplified fitness tracking app integrating Health Connect.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
